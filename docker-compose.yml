@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    command: "caddy reverse-proxy --from ${HOST} --to launcher"
+
+  launcher:
+    image: easyselfhost/launcher:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - AWS_SECURITY_GROUP_ID=${AWS_SECURITY_GROUP_ID}
