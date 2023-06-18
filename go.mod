@@ -11,7 +11,7 @@ require (
 	github.com/caarlos0/env/v8 v8.0.0
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
-	github.com/labstack/gommon v0.4.0 // indirect
+	github.com/labstack/gommon v0.4.0
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
