@@ -16,3 +16,4 @@ services:
     env_file: .env
     environment:
       - AWS_SECURITY_GROUP_ID=${AWS_SECURITY_GROUP_ID}
+      - AWS_KEY_NAME=${AWS_KEY_NAME}
